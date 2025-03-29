@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoGrowthAI - Contact</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #f9f9f9; text-align: center; }
+        .contact { padding: 50px; }
+        form { display: flex; flex-direction: column; align-items: center; }
+        input, textarea { margin: 10px 0; padding: 10px; width: 100%; max-width: 400px; }
+        .btn { padding: 10px 20px; background: #ff6b6b; color: #fff; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>Contact</h2>
+    <div class="contact">
+        <form action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
